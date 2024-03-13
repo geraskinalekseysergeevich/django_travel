@@ -1,0 +1,42 @@
+{% extends "main/layout.html" %}
+{% load static %}
+
+{% block title %}О проекте{% endblock %}
+
+{% block content %}
+    <div class='about_page'>
+        <h1>Я и моя образовательная программа</h1>
+        <div class='person_data'>
+            <div>
+                <h3>{{ data.name }}</h3>
+                <h3>Почта: {{ data.email }}</h3>
+                <h3>Телефон: {{ data.phone }}</h3>
+            </div>
+            <img src="{% static data.photo %}" alt="my photo">
+        </div>
+        <h2>Название программы: {{ data.program_name }}</h2>
+        <h2>Описание программы:</h2>
+        <p>{{ data.program_description }}</p>
+        {% for person in people %}
+            <h2>{{ person.post }}</h2>
+            <div class='person_data'>
+                <div>
+                    <h3>{{ person.name }}</h3>
+                    <h3>Почта: {{ person.email }}</h3>
+                </div>
+                <img src="{% static person.photo %}" alt="{{ person.name }} photo">
+            </div>
+        {% endfor %}
+        <h1>Мои сокурсники</h1>
+        {% for student in students %}
+            <div class='person_data'>
+                <div>
+                    <h3>{{ student.name }}</h3>
+                    <h3>Почта: {{ student.email }}</h3>
+                    <h3>Телефон: {{ student.phone }}</h3>
+                </div>
+                <img src="{% static student.photo %}" alt="{{ student.name }} photo">
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

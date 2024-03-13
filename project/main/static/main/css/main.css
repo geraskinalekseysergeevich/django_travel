@@ -1,0 +1,362 @@
+h1, h2, h3, p { margin: 0; }
+a {text-decoration: none;}
+body {
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: rgb(38, 42, 46);
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+aside {
+    float: left;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 10%;
+    height: 100vh;
+    padding: 35px 2%;
+    background-color: rgb(28, 31, 34);
+}
+
+aside ul {
+    list-style-type: none;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+aside ul li {
+    font-size: 18px;
+    margin-top: 15px;
+    transition: all 0.5s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    transform: scale(1.1);
+}
+
+aside a {
+    text-decoration: none;
+    color: #ffffffab;
+}
+
+aside img {
+    width: 100%;
+}
+
+main {
+    height: 100vh;
+    margin-left: 14%;
+    color: #FFF;
+}
+
+.home_page {overflow-x: hidden;}
+
+main > .home_page h1 { font-size: 90px; }
+main > .home_page h3 { font-size: 26px; }
+main > .home_page p {
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.home_page .body {
+    padding: 60px 6%;
+}
+
+main .title {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: url('/static/main/img/homebg.jpg') no-repeat;
+    margin: -3% -2% 0 -2%;
+    padding: 400px 0 0 5%;
+    height: 650px;
+}
+
+main .post_body {
+    overflow: hidden;
+    position: relative;
+    border-radius: 26px;
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+main .post_body img {
+    width: 100%;
+    height: 100%;
+}
+main .post_body > a {
+    position: absolute;
+    left: 50px;
+    bottom: 35px;
+    color: #FFF;
+}
+
+main .post_body a div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .post_body h3 {
+    font-size: 50px;
+    line-height: 120%;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+img.up_arrow {
+    display: none;
+    width: 100%;
+    max-width: 97px;
+    cursor: pointer;
+    margin-bottom: 35px;
+}
+/* -------------------------------------posts------------------------------------------------- */
+.posts_page {
+    padding: 3% 6%;
+}
+.posts_page .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.posts_page .post_item {
+    position: relative;
+    max-width: 968px;
+    margin-top: 75px;
+
+}
+.post_item > a {
+    color: #FFF;
+    
+}
+.posts_page .post_item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 28px;
+}
+
+.posts_page .post_content {
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
+    max-width: 870px;
+    width: 100%;
+
+}
+
+.post_content h3 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 120%;
+}
+
+.post_content > p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: calc(20/15);
+    margin-top: 10px;
+}
+
+.post_content > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.data, .shows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.post_content > div p {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: calc(41/35);
+}
+
+/* -------------------------------------post1------------------------------------------------- */
+.postitem_page {
+    padding: 3% 6% 9% 6%;
+}
+
+.postitem_page .content {
+    margin-top: 30px;
+}
+
+.back_button {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.back_button > p {
+    color: #FFF;
+    font-size: 45px;
+    line-height: calc(53/45);
+}
+
+.cut_image > img {
+    border-radius: 28px;
+    max-width: 990px;
+    width: 100%;
+}
+.image_with_info, .image_with_link {
+    position: relative;
+}
+
+.image_with_info > div {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    display: flex;
+    gap: 40px;
+}
+
+.image_with_info > div p {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: calc(41/35);
+}
+
+.image_with_link { margin-top: 85px; }
+.image_with_link > a {
+    position: absolute;
+    bottom: 45px;
+    left: 45px;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: calc(29/25);
+    color: #FFF;
+    text-decoration: underline;
+}
+
+.content > p.annot {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 45px;
+    line-height: calc(30/20);
+    color: #9A9797;
+}
+
+
+.nav {
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.nav a {
+    color: #FFF;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: calc(41/35);
+    background-color: #FF8125;
+    border-radius: 7px;
+    padding: 5px 20px;
+}
+
+.content > h1 {
+    margin-top: 100px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: calc(70/60);
+}
+
+.content > p {
+    margin-top: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(30/20);
+}
+.content > p:last-child {
+    margin-top: 115px;
+}
+
+.content > ol, .content > ul {
+    margin: 0;
+    padding-left: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(30/20);
+}
+/*------------------------------------------task_page--------------------------------------------------------*/
+
+.task_page {
+    padding: 3% 6% 9% 6%;
+}
+.task_page form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.task_page label, .task_page p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(30/20);
+}
+.task_page .result {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(30/20);
+}
+.task_page input {
+    border-radius: 5px;
+    border: none;
+    height: 20px;
+}
+.task_page button {
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+    color: #FFF;
+    background-color: #FF8125;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 0;
+    padding: 5px;
+}
+/*--------------------------------------------about_page-----------------------------------------------------*/
+.about_page {
+    padding: 3% 6% 9% 6%;
+}
+.about_page img {
+    max-width: 300px;
+    border-radius: 25px;
+}
+.person_data {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.about_page h1 {
+    margin-top: 50px;
+    color: #FF8125;
+    font-weight: 700;
+    font-size: 52px;
+    line-height: calc(70/60);
+}
+.about_page h2 {
+    margin-top: 50px;
+    font-size: 30px;
+}
+.about_page h3 {
+    margin-top: 20px;
+}
+.about_page p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: calc(30/20);
+    margin-top: 20px;
+}

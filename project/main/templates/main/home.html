@@ -1,0 +1,42 @@
+{% extends "main/layout.html" %}
+{% load static %}
+
+{% block title %}Главная страница{% endblock %}
+
+{% block content %}
+    <div class='home_page'>
+        <div class='title'>
+            <h1>Путешествия<br>в мир приключений</h1>
+        </div>
+        <div class='body'>
+            <p>Здесь вы окунетесь в захватывающий мир путешествий, открытий и приключений. Независимо от того, являетесь ли вы страстным путешественником, мечтаете о следующем приключении или просто ищете вдохновение для своего следующего отпуска, мы готовы поделиться с вами удивительными историями, полезными советами и захватывающими фотографиями.</p>
+            <div class='post_body'>
+                <img src="{% static 'main/img/antarctida.jpg' %}" alt="photo">
+                <a href="{% url "post1" %}">
+                    <div>
+                        <h3>Антарктида</h3>
+                        <img src="{% static 'main/img/right_arrow.png' %}" alt="arrow icon">
+                    </div>
+                </a>
+            </div>
+            <div class='post_body'>
+                <img src="{% static 'main/img/taivan.jpg' %}" alt="">
+                <a href="{% url "post2" %}">
+                    <div>
+                        <h3>Тайвань</h3>
+                        <img src="{% static 'main/img/right_arrow.png' %}" alt="arrow icon">
+                    </div>
+                </a>
+            </div>
+            <div class='post_body'>
+                <img src="{% static 'main/img/moscow.jpg' %}" alt="">
+                <a href="{% url "post3" %}">
+                    <div>
+                        <h3>Москва</h3>
+                        <img src="{% static 'main/img/right_arrow.png' %}" alt="arrow icon">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

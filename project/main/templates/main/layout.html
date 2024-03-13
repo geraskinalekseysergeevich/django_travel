@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href="{% static 'main/css/main.css' %}">
+    <script src="{% static 'main/js/script.js' %}"></script>
+</head>
+<body>
+    <aside>
+        <div>
+            <a href="/">
+                <img src="{% static 'main/img/tabbar_logo.png' %}" alt="logo">
+            </a>
+            <ul>
+                <a href="{% url "home" %}"><li>Главная</li></a>
+                <a href="{% url "posts" %}"><li>Посты</li></a>
+                <a href="{% url "task" %}"><li>Задача</li></a>
+                <a href="{% url "about" %}"><li>О проекте</li></a>
+                <a href="https://github.com/vmarshirov" target="_blank"><li>Github</li></a>
+            </ul>
+        </div>
+        <img class='up_arrow' onClick='scrollToTop()' id='btnScrollToTop' src="{% static 'main/img/up_arrow.png'%}" alt="up arrow">
+    </aside>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+</body>
+</html>

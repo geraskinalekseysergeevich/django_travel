@@ -1,0 +1,62 @@
+{% extends "main/layout.html" %}
+{% load static %}
+
+{% block title %}Посты{% endblock %}
+
+{% block content %}
+    <div class='posts_page'>
+        <div class='body'>
+            <div class='post_item'>
+                <img src="{% static 'main/img/post1_bg.jpg' %}" alt="antarctida photo">
+                <a href="{% url "post1" %}" class='post_content'>
+                    <h3>Антарктида</h3>
+                    <p>Путешествие в Антарктиду представляет собой захватывающий опыт, включающий полет через Южную полусферу, посадку на заснеженный континент и исследование уникальной природы. Во время путешествия вы сможете увидеть ледники, айсберги, пингвинов, а также сети научных станций, узнать об истории открытия Антарктиды, ее современных исследованиях и географических особенностях.</p>
+                    <div>
+                        <div class='shows'>
+                            <p>233</p>
+                            <img src="{% static 'main/img/eye_icon.png' %}" alt="eye icon">
+                        </div>
+                        <div class='data'>
+                            <p>20.01.24</p>
+                            <img src="{% static 'main/img/calendar_icon.png' %}" alt="calendar icon">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class='post_item'>
+                <img src="{% static 'main/img/post2_bg.jpg' %}" alt="antarctida photo">
+                <a href="{% url "post2" %}" class='post_content'>
+                    <h3>Тайвань</h3>
+                    <p>Путешествие в Тайвань предложит вам невероятное сочетание современных городов, уютных традиционных поселений, обширной природы и впечатляющих горных пейзажей. Основные достопримечательности включают высотные небоскребы  в Тайбэе, живописные театры кукол на воде в Яоюане, культурные фестивали, такие как фестиваль дракона и лодки-драконьи страницы и потрясающий Национальный парк Тароко.</p>
+                    <div>
+                        <div class='shows'>
+                            <p>110</p>
+                            <img src="{% static 'main/img/eye_icon.png' %}" alt="eye icon">
+                        </div>
+                        <div class='data'>
+                            <p>18.01.24</p>
+                            <img src="{% static 'main/img/calendar_icon.png' %}" alt="calendar icon">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class='post_item'>
+                <img src="{% static 'main/img/post3_bg.jpg' %}" alt="antarctida photo">
+                <a href="{% url "post3" %}" class='post_content'>
+                    <h3>Москва</h3>
+                    <p>Путешествие в Москву предлагает уникальную возможность насладиться богатой историей, культурным наследием  и разнообразными развлечениями. Вы сможете посетить Красную площадь, Кремль, церковь Василия Блаженного, уникальные музеи, театры, рестораны и многое другое. От Московского метрополитена до шикарных торговых центров, Москва поразит вас своим разнообразием и удивительными видами.</p>
+                    <div>
+                        <div class='shows'>
+                            <p>445</p>
+                            <img src="{% static 'main/img/eye_icon.png' %}" alt="eye icon">
+                        </div>
+                        <div class='data'>
+                            <p>01.01.24</p>
+                            <img src="{% static 'main/img/calendar_icon.png' %}" alt="calendar icon">
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
